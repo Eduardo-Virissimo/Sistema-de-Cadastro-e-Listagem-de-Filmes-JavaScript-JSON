@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<center>
+    <br><br><br>
+    <h1>SISTEMA DE CADASTRO E LISTAGEM DE FILMES</h1><br>
+    <label>Código:</label>
+    <input id='codigo' type='text' required="required">
+    <label>Nome:</label>
+    <input id='nome' type='text' required="required">
+    <label>Gênero:</label>
+        <select id='genero'>
+            <option value="Terror">Terror</option>
+            <option value="Aventura">Aventura</option>
+            <option value="Romance">Romance</option>
+            <option value="Ficção">Ficção</option>
+            <option value="Comédia">Comédia</option>
+        </select>
+    <label>País:</label>
+    <input id='pais' type='text' required="required">
+    <label>Ano de lançamento:</label>
+    <input id='lancamento' type='number' required="required">
+    <label>Exibir relatório:</label>
+    <input name="opcao" type="radio" id='relatoriosim' value="sim" checked>Sim</input>
+    <input name="opcao" type="radio" id='relatorionao' value="nao">Não</input>
+    <br><br><br>
+    <button onclick="Cadastrar(), ListarFilmes()">Cadastrar filme!</button><br><br>
+
+    <script src='functions.js'></script>
+
+    <div id='listagemdiv'>
+
+    </div>
+</center>
+</body>
+</html>
